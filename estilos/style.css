@@ -79,6 +79,8 @@ form input{
     padding: 5px;
     border: 3px solid #01000b;
     border-radius: 10px;   
+    width: 70%;
+    margin-top: 5px;
 
 }
 
@@ -89,6 +91,9 @@ form > input[type=submit]{
     display: block;
     width: 90%;
     margin: auto;
+}
+form input:focus-within{
+    background-color: white;
 }
 #entrar{
     background-color: #01000b;
