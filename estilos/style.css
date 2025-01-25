@@ -24,13 +24,14 @@ Roxo: 827191
     padding: 0px;
     font-family: "Ubuntu", serif;
     color: rgb(0, 0, 0);
+    box-sizing: border-box;
     
 }
 
 html, body{
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    position: relative;
     background-color: #01000b;
 }
 main{
@@ -38,11 +39,12 @@ main{
     height: 520px;
    background-color: rgb(255, 255, 255);
    margin: auto;
-   position: relative;
+   position: absolute;
    top: 50%;
    left:50%;
    transform: translate(-50%, -50%);
    border-radius: 15px;
+   
 }
 #imagem{
     background-image:url('../imagens/pexels-didsss-2911521.jpg') ;
@@ -51,8 +53,11 @@ main{
     background-size: cover;
   width: 300px;
   height: 170px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+ /* overflow: hidden;*/
+ border-top-left-radius: 15px;
+ border-top-right-radius: 15px;
+ transition: width 0.3s, height 0.3s;
+ transition-timing-function: ease;
 }
 main h1{
     padding: 10px;
