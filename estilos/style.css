@@ -85,23 +85,29 @@ form input{
 form input:hover{
     background-color: #978fe948;
 }
-
+form > input[type=submit]{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
 #entrar{
     background-color: #01000b;
     color: white;
-    margin-top: 10px;
-    margin-left: 15px;
-    width: 270px;
+    margin-top: 20px;
     border-radius: 7px;
     cursor: pointer;
     font-size: 1.1em;
 }
 #senha{
-    margin-top: 5px;
-    margin-left: 15px;
-    width: 270px;
+    display: block;
+    width: 90%;
+    margin: auto;
+    padding-top: 2px;
+    height:33px;
     border-radius: 7px;
     cursor: pointer;
     text-align: center;
     font-size: 1.1em;
+    border: 3px solid #01000b;
+    text-decoration: none;
 }
