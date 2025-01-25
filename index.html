@@ -15,14 +15,15 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no sua ambiente</p>
-                <form action="login.php" method="post"> 
-                    <label for="iperfil"><span class="material-symbols-outlined">
-                        person
-                        </span></label>
-                        <input type="text" name="perfil" id="iperfil">
+                <form action="login.php" method="post" autocomplete="on" > 
+                    <label for="iperfil">Per</label> 
+                        <input type="text" name="perfil" id="iperfil" placeholder="Email" size="25" minlength="5" maxlength="40"> <br>
                         <label for="isenha">  <span class="material-symbols-outlined">vpn_key</span></label>
-                        <input type="password" name="senha" id="isenha">
-
+                        <input type="password" name="senha" id="isenha" placeholder="Senha" size="25" minlength="8" maxlength="20" required >
+                       
+                            <input type="submit" value="Entrar" id="entrar"> <br>
+                            <input type="text" value="Esqueci minha senha" id="senha">
+                        
                 </form>
             </div>
         </section>
