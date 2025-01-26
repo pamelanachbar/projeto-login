@@ -36,7 +36,7 @@ html, body{
 }
 main{
     width: 300px;
-    height: 520px;
+    height: 540px;
    background-color: rgb(255, 255, 255);
    margin: auto;
    position: absolute;
@@ -79,13 +79,16 @@ form input{
     padding: 5px;
     border: 3px solid #01000b;
     border-radius: 10px;   
-    width: 70%;
+    width: 75%;
     margin-top: 5px;
 
 }
-
+form input[type=password]{
+    width: 73.9%;
+    margin-top: 10px;
+}
 form input:hover{
-    background-color: #978fe948;
+    background-color: rgb(239, 234, 234);
 }
 form > input[type=submit]{
     display: block;
@@ -115,4 +118,8 @@ form input:focus-within{
     font-size: 1.1em;
     border: 3px solid #01000b;
     text-decoration: none;
+    margin-top: 10px;
+}
+#senha:hover{
+    background-color: rgb(239, 234, 234);
 }
